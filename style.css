@@ -1,0 +1,65 @@
+/* Outer layer of the Calculator*/
+.container {
+    max-width: 400px;
+    margin-top: 60px;
+    margin-left: 600px; 
+    box-shadow: 5px 5px 43px 17px rgb(204, 204, 238);
+    border-radius: 8px;
+}
+
+/* To align title(Calculator) to the center*/
+.title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family :cursive;
+}
+
+/* Display box that displays keys and results on Calculator*/
+#display {
+    text-align: right;
+    height: 60px;
+    line-height: 90px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+/* Numbers and operators alignment as four*/
+.buttons {
+    display: grid;
+    border-radius: 8px;
+    border-bottom: 1px solid rgb(141, 133, 133);
+    border-left: 1px solid rgb(141, 133, 133);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Add border on four sides of buttons*/
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+    border-left: 1px solid#999;
+    border-bottom : 1px solid#999;
+}
+
+/* Display numbers and operator buttons*/
+.button {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Add color to equals buttons*/
+#equal {
+    background-color: rgb(247, 188, 14);
+    color: black;
+}
+
+/*Changes color when hovering on buttons*/
+.button:hover {
+    background-color: rgb(141, 133, 133);
+    color: black;
+    transition: 0.5s ease-in-out;
+}
